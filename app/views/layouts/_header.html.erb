@@ -1,27 +1,25 @@
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item active px-lg-4">
-          <a class="nav-link text-uppercase text-expanded" href="<%= root_path %>">Home</a>
-        </li>
-        <li class="nav-item px-lg-4">
-          <a class="nav-link text-uppercase text-expanded" href="<%= land1_path %>">Landing Page 1
-          </a></li>
-        <li class="nav-item px-lg-4">
-          <a class="nav-link text-uppercase text-expanded" href="<%= land2_path %>">Landing Page 2
-          </a></li>
-        <li class="nav-item px-lg-4">
-          <a class="nav-link text-uppercase text-expanded" href="<%= land3_path %>">Landing Page 3
-          </a></li>
-      </ul>
-    </div>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="<%= root_path %>"><img id="logo" src="http://thp-agency.herokuapp.com/assets/logo-d36597a810f80a0e3c8ef6cb7b447c771565d605521871742c490f1192406590.png" alt="Logo">
+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="<%= land1_path %>">Landing Page 1</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="<%= land2_path %>">Landing Page 2</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="<%= land3_path %>">Landing Page 3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="<%= services_path %>">Services</a>
+      </li>
+    </ul>
   </div>
 </nav>
