@@ -38,6 +38,8 @@
 
   <body>
 
+
+
     <%= render 'layouts/header' %>
     <% if flash[:notice] %>
       <%= flash[:notice] %></p>
@@ -46,8 +48,9 @@
       <%= flash[:error] %></p>
     <% end %>
     <% flash[:error] = flash[:notice] = nil %>
+<div class="fou">
     <%= yield %>
+</div>
     <%= render 'layouts/footer' %>
-
   </body>
 </html>
