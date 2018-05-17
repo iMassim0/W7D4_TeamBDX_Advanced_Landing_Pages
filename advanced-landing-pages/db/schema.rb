@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_17_101513) do
+ActiveRecord::Schema.define(version: 2018_05_17_122921) do
 
   create_table "tweets", force: :cascade do |t|
     t.integer "tweet_id", null: false
@@ -20,6 +20,18 @@ ActiveRecord::Schema.define(version: 2018_05_17_101513) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["tweet_id"], name: "index_tweets_on_tweet_id", unique: true
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "firstname", default: "", null: false
+    t.string "lastname", default: "", null: false
+    t.string "email", default: "", null: false
+    t.string "confirmation_hash"
+    t.boolean "confirm", default: false, null: false
+    t.boolean "subscribe", default: false, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
 end
