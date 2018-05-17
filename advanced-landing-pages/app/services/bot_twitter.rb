@@ -8,6 +8,12 @@ class BotTwitter
       config.access_token_secret = ENV['TWITTER_TOKEN_SECRET']
   end
 
-  
+
+  def 
+  end
+
+
+  def perform
+  end
 
 end
