@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   get "/services", to: "home#services", as: :services
   post :twitter, to: "home#twitter", as: :twitter
   get "/confirm/:hash", to: "users#confirmation"
+  get "/unsubscribe/:hash", to: "users#unsubscribe"
   post "/user/new", to: 'users#create', as: :new_user
+  post "/confirm/:hash", to: "users#confirmation", as: :confirmation
+  get "/unsubscribe/:hash", to: "users#unsubscribe", as: :unsubscribe
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
