@@ -1,5 +1,5 @@
-<h1>Newsletter THP n°<%= news_number %></h1>
-
+<h1>Newsletter THP n°<%= @news_number %></h1>
+<h4><%= "Bonjour #{@user.firstname.capitalize} #{@user.lastname.capitalize} !" %></h4>
 <p>
   Pour en apprendre plus sur la formation The Hacking Project rendez-vous sur <%= link_to "Facebook", "https://www.facebook.com/thehackingproject/" %>, ou directement sur <%= link_to "notre site", "https://www.thehackingproject.org/" %>.
 </p>

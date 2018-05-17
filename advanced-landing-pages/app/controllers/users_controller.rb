@@ -1,9 +1,10 @@
 class UsersController < ApplicationController
 
   def create
-    @user = User.new(params_user, confirmation_hash: rand(36**36).to_s(36))
+    @user = User.new(params_user)
+    @user.confirmation_hash = rand(36**36).to_s(36)
       if @user.save
-        if ConfirmationMailer.confirmation.(@user.email).deliver_now
+        if ConfirmationMailer.confirmation(@user.email).deliver_now
           flash.now[:notice] = "Merci de confirmer votre inscription dans l'email qui vous a été envoyé à l'adresse #{@user.email}."
           redirect_to root_path
         else
@@ -38,6 +39,10 @@ class UsersController < ApplicationController
       flash.now[:error] = "Lien de confirmation erroné. :("
       redirect_to root_path
     end
+  end
+
+  def newsletter
+    Newsletter.new.perform
   end
 
   private

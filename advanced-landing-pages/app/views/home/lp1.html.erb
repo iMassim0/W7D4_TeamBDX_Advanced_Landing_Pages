@@ -82,35 +82,38 @@
         <h2 class="mb-4">Ready to get started? Sign up now!</h2>
       </div>
       <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-        <form>
-          <div class="form-row">
-            <div class="col-12 col-md-9 mb-2 mb-md-0">
-              <input type="firstname" class="form-control form-control-lg" placeholder="Enter your firstname...">
+          <%= form_for @user, url: {controller: "users", action: "create"} do |u| %>
+
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <%= u.text_field :firstname, class: "form-control form-control-lg", placeholder: "Enter your firstname..." %><br>
+              </div>
+
+              <div class="col-12 col-md-3">
+              </div>
             </div>
-            <div class="col-12 col-md-3">
+
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <%= u.text_field :lastname, class: "form-control form-control-lg", placeholder: "Enter your lastname..." %><br>
+              </div>
+              <div class="col-12 col-md-3">
+              </div>
             </div>
-          </div>
-          <br/>
-          <div class="form-row">
-            <div class="col-12 col-md-9 mb-2 mb-md-0">
-              <input type="lastname" class="form-control form-control-lg" placeholder="Enter your lastname...">
+
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <%= u.text_field :email, class: "form-control form-control-lg", placeholder: "Enter your Email..." %><br>
+              </div>
             </div>
-            <div class="col-12 col-md-3">
+
+            <div class="form-row">
+              <div class="col-12 col-md-9">
+                <%= u.submit "Submit !" %>
+              </div>
             </div>
-          </div>
-          <br/>
-          <div class="form-row">
-            <div class="col-12 col-md-9 mb-2 mb-md-0">
-              <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-            </div>
-          </div>
-          <br/>
-          <div class="form-row">
-            <div class="col-12 col-md-9">
-              <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-            </div>
-          </div>
-        </form>
+
+          <% end %>
       </div>
     </div>
   </div>
