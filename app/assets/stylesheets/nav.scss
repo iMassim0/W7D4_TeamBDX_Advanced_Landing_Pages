@@ -1,0 +1,19 @@
+body {
+  height: 100vh;
+}
+
+#logo {
+   width: 150px;
+ }
+
+#footer {
+  position: fixed;
+  background-color: rgb(246,247,249);
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.container-footer {
+  text-align: center;
+}

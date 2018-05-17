@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tweet_id: 1
+  creator: MyString
+  date: 2018-05-17 12:15:13
+  reply?: false
+
+two:
+  tweet_id: 1
+  creator: MyString
+  date: 2018-05-17 12:15:13
+  reply?: false
