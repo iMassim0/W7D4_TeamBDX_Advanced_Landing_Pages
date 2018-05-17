@@ -1,7 +1,11 @@
 > https://private-club-thp-bdx.herokuapp.com/
 
-# Week n°7 on Day n°1 - THP by Team BDX - @massimo
-# Test Driven Development on PrivateClub
+# Week n°7 on Day n°4 - THP by Team BDX
+# Landing Pages
+
+MAJ NECESSAIRE __________________________________________________________
+
+
 
 ## Projet du jour :
 
