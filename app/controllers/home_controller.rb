@@ -10,4 +10,12 @@ class HomeController < ApplicationController
 
   def lp3
   end
+
+  def twitter
+    BotTwitter.new.perform
+  end
+
+  def services
+  end
+
 end
