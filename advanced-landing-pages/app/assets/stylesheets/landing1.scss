@@ -1,11 +1,17 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 /*!
  * Start Bootstrap - Business Casual v4.1.1 (https://startbootstrap.com/template-overviews/business-casual)
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/LICENSE)
  */
+
+
+ @import "bootstrap/index";
+
+
+ @import "scss/index";
+
+
+
 body {
   font-family: 'Lora';
   background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
@@ -26,6 +32,8 @@ h6 {
 p {
   line-height: 1.75;
 }
+
+
 
 .text-faded {
   color: rgba(255, 255, 255, 0.3);
