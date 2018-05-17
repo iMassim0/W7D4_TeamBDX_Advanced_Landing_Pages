@@ -38,7 +38,7 @@ Notre application rails a été créée (avec ❤️🤧) de manière à avoir l
 
   - des gestions de users, avec inscription dans une DB pour un envoi de la newsletter. L'utilisateur aura la possibilités de pouvoir s'inscrire, ou se désinscrire de la liste des abonnés.
 
-  - Scheduler er er ?
+  - Grâce à l'application Scheduler du site Heroku, nous avons pu lier une task nommée "automate". Celle-ci a été paramétrée pour dire "bonjour bonjour!" toutes les 10 minutes sur le serveur. Cela pourrait permettre par exemple de rentrer l'action en lien avec la database d'abonnés, qui check la db toutes les 10 minutes l'entrée de nouvelles personnes, et si c'est le cas, un email est directement envoyé au propriétaire de l'app. Nous ne l'avons pas codé par manque de temps mais au vu du déploiement effectué, cette action reste totalement réalisable.
 
 ## Tests de l'application :
 
