@@ -4,7 +4,7 @@ class CreateTweets < ActiveRecord::Migration[5.2]
       t.integer :tweet_id, null: false
       t.string :creator, null: false
       t.datetime :date
-      t.boolean :reply?, default: 0
+      t.boolean :reply, default: false
 
       t.timestamps
     end

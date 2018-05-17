@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2018_05_17_101513) do
     t.integer "tweet_id", null: false
     t.string "creator", null: false
     t.datetime "date"
-    t.boolean "reply?", default: false
+    t.boolean "reply", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["tweet_id"], name: "index_tweets_on_tweet_id", unique: true
