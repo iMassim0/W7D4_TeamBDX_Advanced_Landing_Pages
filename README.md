@@ -1,24 +1,20 @@
-> https://private-club-thp-bdx.herokuapp.com/
+> Lien en production : https://bdx-landing-pages.herokuapp.com/
 
 # Week n°7 on Day n°4 - THP by Team BDX
-# Landing Pages
-
-MAJ NECESSAIRE __________________________________________________________
-
-
+# Advanced Landing Pages
 
 ## Projet du jour :
 
-Le projet du jour consiste à créer de toute pièce une application en pensant dès le début à la manière de tester celle-ci ! Prisée dans le monde de la programmation, la méthode de test d'une app est une technique appréciée et recherchée. Un développeur habile, malin et minutieux effectuera simultanément rédaction && tests lors d'une création d'une app.
+Le projet du jour consiste à créer 3 Landing Pages créés à partir d'une application (ou plusieurs) rails. Celle-ci devra posséder au moins une intégration bootstrap, avoir un mailer fonctionnel en lien avec un subscribe/unsubscribe par activation d'email. Egalement, 2 opérations marketing sont attendues (bot, scrapping, etc.).
 
 ## Pré-requis et installation :
 
-1 - Veuillez svp vous relever de votre PLS.
+1 - Veux-tu bien stp te relever de ta PLS.
 
-2 - Veuillez cloner ce repo sur votre machine avec la commande suivante (le dossier créé s'appelera "W7D1_TeamBDX_PrivateClub") :
+2 - Clone ce repo sur ta machine avec la commande suivante (le dossier créé s'appelera alors "W7D4_TeamBDX_Advanced_Landing_Pages") :
 
 ```
-  $ git clone https://github.com/iMassim0/W7D1_TeamBDX_PrivateClub
+  $ git clone https://github.com/iMassim0/W7D4_TeamBDX_Advanced_Landing_Pages
 ```
 
 3 - Se rendre dans le dossier souhaité, et effectuer cette ligne de commandes suivante pour initialiser le fonctionnement :
@@ -27,47 +23,50 @@ Le projet du jour consiste à créer de toute pièce une application en pensant 
   $ bundle install --without production && rails db:migrate
 ```
 
-**NOTA : Vous pouvez, si la gem PG est installée sur votre machine, effectuer un `bundle install` simple.**
+**NOTA : Tu peux, si la gem PG est installée sur ta machine, effectuer un `bundle install` simple.**
 
-## Conditions de test des exercices pour les corrections
+## Contenu et fonctionnement de l'application :
 
-Les exercices 2.1 concernent uniquement des tests sur le model User.
-Les exercices de 2.2 à 2.4.1 concernent les views et leur fonctionnements.
-Tous les exercices ont été réalisés.
-Pour cela, effectuez ces commandes pour vérifier les TDD des models && views (via system).
+Notre application rails a été créée (avec ❤️🤧) de manière à avoir les fonctionnalités suivantes :
 
-  - Vérification de l'exercice 2.1 :
+  - 3 landing pages opérationnelles : 1 axée sur un template bootstrap gratuit       (landing-page 1)
+                                      1 basée sur un autre modèle un peu plus sexy de timeline(pensez à cliquer sur les balises - landing-page 2)
+                                      1 uniquement liée  un effet déco de THP en bannière (landing-page 3)
+    Pour information, les landing-pages ne sont pas finalisées, et cela est voulu car le but ici est de créer une application fonctionnelle et non des LP à but market' finie.
+
+  - 1 mailer fonctionnel, utilisé avec la gem Mailjet, lié à un formulaire de contact.
+
+  - des gestions de users, avec inscription dans une DB pour un envoi de la newsletter. L'utilisateur aura la possibilités de pouvoir s'inscrire, ou se désinscrire de la liste des abonnés.
+
+  - Scheduler er er ?
+
+## Tests de l'application :
+
+Pour tester et observer notre travail, assis toi comfortablement, prends du pop-corn, enfiles tes plus beaux chaussons, et en avant guinguamp.
+
+Plusieurs solutions s'offrent à toi :
+
+Trankilou OKLM ? Alors visites le lien de l'application en production :
 ```
-  $ rails test
+  @ https://bdx-landing-pages.herokuapp.com/
 ```
 
-- Vérification de l'exercice 2.2 à 2.4.1 :
-```
-  $ rails test:system
-```
-
-  - Egalement, vous pourrez vérifier "à la mano" le fonctionnement du site en lancant une version en local :
+Sinon, tu peux lancer un petit http://localhost:3000 des familles avec un :
 ```
   $ rails server
 ```
-Puis vous rendre à l'adresse suivante :
+Et à toi la gloire, teste, re-teste, observe et inspecte!
+
+Envie de tester les modèles ? Nous te laissons lacher la bonne vieille :
 ```
-  @ http://localhost:3000/
+  $ rails console
 ```
 
-Pour les plus hardis, un game peut se tenter via la console :
-```
-  $ rails console
-```
-
-Enfin, au cas ou, voici le lien en production de l'app :
-```
-  @ https://private-club-thp-bdx.herokuapp.com/
-```
+Enfin, pour une inspection minutieuse et de fond en comble, utilise donc ton EDI préféré et analyse chaque ligne de nos codes !
 
 **NOTA : $ = terminal || > = console rails || @ = web browser**
 
-## Versions
+## Versions :
 
 *Ruby 2.5.1*
 
@@ -75,12 +74,18 @@ Enfin, au cas ou, voici le lien en production de l'app :
 
 *Bundle 1.16.1*
 
-## Contributeur
+## Contributeurs :
+
+@bab - Baptiste ROGEON
 
 @massimo - Maxime FLEURY
-
-et l'aide précieuse de Mister @bab !
 
 <p align="center">
   <img src="THP_BDX.png"/>
 </p>
+
+## Pour aller plus loin :
+
+Bon, voila comment après une journée comme celle-ci, on a envie de finir ....
+
+https://www.koreus.com/video/court-metrage-thats-life.html
