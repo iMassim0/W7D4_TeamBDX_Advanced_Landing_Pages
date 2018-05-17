@@ -1,0 +1,8 @@
+<h1>Newsletter THP n°<%= news_number %></h1>
+
+<p>
+  Pour en apprendre plus sur la formation The Hacking Project rendez-vous sur <%= link_to "Facebook", "https://www.facebook.com/thehackingproject/" %>, ou directement sur <%= link_to "notre site", "https://www.thehackingproject.org/" %>.
+</p>
+<p>
+  Si vous voulez quitter le navire, <%= link_to "cliquez ici", unsubscribe_url(@user.confirmation_hash) %>.
+</p>
