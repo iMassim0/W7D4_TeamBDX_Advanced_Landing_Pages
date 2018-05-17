@@ -37,10 +37,14 @@ Notre application rails a été créée (avec ❤️🤧) de manière à avoir l
   - 1 mailer fonctionnel, utilisé avec la gem Mailjet, lié à un formulaire de contact.
 
   - des gestions de users, avec inscription dans une DB pour un envoi de la newsletter. L'utilisateur aura la possibilités de pouvoir s'inscrire, ou se désinscrire de la liste des abonnés.
+  
+  - Un bot Twitter qui effectue une recherche sur les termes "formation web", prend les 10 derniers tweets originaux et les enregistre en database (id, username, date de création). On colle aussi un booléen false sur un attribut "reply" à la création. Le bot checke ensuite tous les tweets avec "reply" false dans la db et tweete un message à chacun des username, en attendant 10 secondes entre chaque. Il passe en même temps chaque tweet à "reply" true.
 
   - Grâce à l'application Scheduler du site Heroku, nous avons pu lier une task nommée "automate". Celle-ci a été paramétrée pour dire "bonjour bonjour!" toutes les 10 minutes sur le serveur. Cela pourrait permettre par exemple de rentrer l'action en lien avec la database d'abonnés, qui check la db toutes les 10 minutes l'entrée de nouvelles personnes, et si c'est le cas, un email est directement envoyé au propriétaire de l'app. Nous ne l'avons pas codé par manque de temps mais au vu du déploiement effectué, cette action reste totalement réalisable.
 
 ## Tests de l'application :
+
+**Les boutons de la page SERVICES fonctionnent, par contre pour pas me faire ban mon compte Twitter perso j'ai pas rentré les credentials sur heroku :D (exemple ici : https://twitter.com/baaab/with_replies). LA NEWSLETTER MARCHE VRAIMENT, donc vous pouvez rentrer un vrai mail dans la Landing page 1 pour tester l'inscription et la réception des news. Le lien de desinscription dans chaque newsletter est DEFINITIF.**
 
 Pour tester et observer notre travail, assis toi comfortablement, prends du pop-corn, enfiles tes plus beaux chaussons, et en avant guinguamp.
 
